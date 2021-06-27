@@ -1,16 +1,15 @@
 package ru.geekbrains.lesson5;
 
 public class Employee {
-    String name;
-    String duties;
-    String email;
-    int phone;
-    float salary;
-    int age;
+    private String name;
+    private String duties;
+    private String email;
+    private int phone;
+    private float salary;
+    private int age;
 
 
-
-   public Employee(String name, String duties, String email, int phone, float salary, int age) {
+    public Employee(String name, String duties, String email, int phone, float salary, int age) {
 
         this.name = name;
         this.duties = duties;
@@ -21,18 +20,30 @@ public class Employee {
 
     }
 
-    public void printInfo(String name, String duties, String email, int phone, float salary, int age) {
+
+    public void printInfo() {
         System.out.printf("Employee: name - %s, duties - %s, email - %s, phone = %d, salary - %f, age - %d", this.name, this.duties, this.email, this.phone, this.salary, this.age);
 
-//        Employee[] empArr = new Employee[5];
-//        empArr[0] = new Employee("John", "Manager", "john@mail.com", 12345, 10000f, 25);
-//        empArr[1] = new Employee("Jim", "Builder", "jim@mail.com", 67890, 50000f, 28);
-//        empArr[2] = new Employee("Ivan", "Driver", "ivan@mail.com", 13579, 37000f, 69);
-//        empArr[3] = new Employee("Maria", "Cook", "maria@mail.com", 24680, 37000f, 48);
-//        empArr[4] = new Employee("Olga", "Team Lead", "olga@mail.com", 14679, 103000f, 30);
+    }
 
+    public int getAge() {
+        return age;
+    }
+
+    @Override
+    public String toString() {
+        return "Employee{" +
+                "name='" + name + '\'' +
+                ", duties='" + duties + '\'' +
+                ", email='" + email + '\'' +
+                ", phone=" + phone +
+                ", salary=" + salary +
+                ", age=" + age +
+                '}';
     }
 }
+//
+//}
 
 
 //        1. Создать класс "Сотрудник" с полями: ФИО, должность, email, телефон, зарплата, возраст.
