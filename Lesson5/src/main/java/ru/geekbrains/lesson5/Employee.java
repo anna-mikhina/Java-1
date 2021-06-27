@@ -29,21 +29,8 @@ public class Employee {
     public int getAge() {
         return age;
     }
-
-    @Override
-    public String toString() {
-        return "Employee{" +
-                "name='" + name + '\'' +
-                ", duties='" + duties + '\'' +
-                ", email='" + email + '\'' +
-                ", phone=" + phone +
-                ", salary=" + salary +
-                ", age=" + age +
-                '}';
-    }
 }
-//
-//}
+
 
 
 //        1. Создать класс "Сотрудник" с полями: ФИО, должность, email, телефон, зарплата, возраст.
